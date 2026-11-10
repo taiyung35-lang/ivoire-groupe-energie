@@ -68,17 +68,30 @@ nav a:hover {
     border-radius: 5px;
 }
 
+
 .hero {
-    min-height: 520px;
+    min-height: 560px;
     padding: 100px 8%;
     display: flex;
     align-items: center;
-    background: #f5f8f5;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        110deg,
+        #f1f7f3 0%,
+        #ffffff 60%,
+        #fff2e8 100%
+    );
 }
 
+
+
 .hero-content {
-    max-width: 650px;
+    max-width: 700px;
+    position: relative;
+    z-index: 2;
 }
+
 
 .subtitle {
     color: #F47721;
@@ -87,16 +100,19 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+
 .hero h1 {
-    font-size: 58px;
-    line-height: 1.15;
+    font-size: 64px;
+    line-height: 1.12;
     color: #075B35;
-    margin-bottom: 20px;
+    font-weight: 800;
+    margin-bottom: 24px;
 }
 
 .hero h1 span {
     color: #F47721;
 }
+
 
 .description {
     font-size: 18px;
@@ -658,4 +674,15 @@ footer a {
     .contact-hero h1 {
         font-size: 29px;
     }
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.main-btn:hover {
+    background: #F47721;
+    transform: translateY(-3px);
 }
