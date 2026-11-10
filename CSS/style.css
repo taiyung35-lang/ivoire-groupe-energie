@@ -15,8 +15,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 22px 6%;
-    background: white;
+    padding: 20px 6%;
+    background: #ffffff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -48,10 +52,14 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: #222;
+    color: #222222;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
+nav a:hover {
+    color: #989491;
+}
 .contact-btn, .main-btn {
     background: #08713D;
     color: white;
